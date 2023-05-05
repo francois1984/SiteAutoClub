@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -12,29 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/fa037f360a.js" crossorigin="anonymous"></script>
 
     <title>Club Auto</title>
 </head>
 
 <body class="container-fluid" >
-    <section class="d-sm-none d-md-block">
+    <section class="">
         <header class="" style="background-color: #232628
-        ; font-size: small;color: aliceblue;">
-            <div class=" container ">
+        ; font-size: small;color: #ECEFF3;">
 
-                <ul class=" m-0 row col-lg-12  row-cols-sm-12 align-items-center"style="list-style: none;" >
+            <div class="container"> 
+                <div class="row text-end">
+                    <div class="col d-block navbar navbar-expand-lg navbar-light"  >
+                        <button type="button" class="navbar-toggler p-3" data-bs-toggle="collapse" data-bs-target="#navbar-content" style="border: none;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-list navbar-toggler " viewBox="0 0 16 16" style="color: #6C98E1;">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+                
+                
+            <div class=" container-fluid p-3 ">
+                <ul class=" m-auto row col-lg-12   container text align-items-center "style="list-style: none; " >
 
-                    <li class="col-3">
+                    <li class="col-3 d-none d-md-block d-xl-block" >
                         <h1 class=" " style="font-family: 'Montserrat', sans-serif;">
                         CLUB AUTO
                         </h1> 
                     </li>
 
-                    <li class="col-3" id="infos" style=" list-style: none;">
+                    <li class="col-2 d-none d-xl-flex " id="infos" style=" list-style: none;">
 
                         <span>
-                            <i class="fab fa-sharp fa-regular fa-circle-location-arrow" style="color: #cc6119;"></i>
+                            <img src="/images/icone-adresse.png" alt="ADRESSE" class="" style="width: 2rem;">
                         </span>
 
                         <p class="h6" style="font-size: small;">   
@@ -42,21 +57,21 @@
                         </p>
                     </li>
 
-                    <li class="col" style="list-style: none;">
+                    <li class="col-2 d-flex col-sm-4 " style="list-style: none; width: 20rem;">
                         <span>
-                            <i class="fa-sharp fa-regular fa-circle-phone-flip fa-rotate-180 fa-lg" style="color: #cc6119;"></i>
+                            <img src="/images/icon-telephone.png" alt="TELEPHONE" class="" style="width: 2rem;">
                         </span>
                         <p >
                             <span class="h6 " style="color: #CC6119;font-size: small;">
                                 TELEPHONE : <br>
                             </span> 
-                            <strong class="h4" style="font-size: medium;">
+                            <strong class="h4" style="font-size: large;">
                                 01 23 45 67 89
                             </strong> 
                         </p>
                     </li>
 
-                    <li class="col-3" style="list-style: none;">
+                    <li class="col-2 d-none d-xl-block" style="list-style: none;">
 
                                 <p class="h6 " style="font-size: small;"><strong class="h6" style="color: #CC6119; font-size: small;"> OUVERTURE:</strong> Du Lundi au Samedi
                                 </p>
@@ -69,7 +84,7 @@
                             
                     
                     
-                    <li class="col d-flex">
+                    <li class="col d-flex d-none d-xl-block">
                         <a href="#" class="p-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -103,14 +118,11 @@
 </style>
 
 <section >
-    <div class="d-sm-none d-md-block" style=" background-image: url(/images/vehicule1.jpg); background-size: cover">
-
-        <div class="navbar navbar-expand-lg navbar-light px-3" style="background: #eceff3da;" >
-
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="navbar navbar-expand-lg navbar-light p-0 dnone d-xl-flex" style="background: #eceff3da;" >
+            
             <div class="collapse navbar-collapse justify-content-end" style="margin-right: 8rem;" id="navbar-content">
+                
+                
                 <nav class=""  >
                     <ul class="navbar-nav ms-auto" style="font-family: 'Open Sans', sans-serif; font-size: small;" >
                             <li class="nav-item"><a class="nav-link" href=""><strong>ACCUEIL</strong> </a></li>
@@ -118,17 +130,10 @@
                             <li class="nav-item"><a class="nav-link" href="#"><strong>LOCATION</strong> </a>
                             <li class="nav-item"><a class="nav-link" href="/Contact.html"><strong>CONTACT</strong> </a></li>
                     </ul>
-                    
                 </nav>
-        
             </div>
+
             
-            <button type="button" class="btn ms-3" data-bs-toggle="offcanvas" data-bs-target="#userTools">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg>
-            </button>
         </div>
 
         <div class="offcanvas offcanvas-end" id="userTools" style="font-family: 'Open Sans', sans-serif;">
@@ -154,21 +159,20 @@
                 </form>
             </div>
         </div>
+        <img src="/images/vehicule1.1.jpg" alt="" style="" class="  d-none d-md-block d-xl-block h-25 w-100">
 
         <div class="container-fluid text-center ">
-            <div class="row "  style="background-color: #232628; color:#ECEFF3;  padding-bottom: 3%; padding-top: 3%; position: relative;margin-top: 40%; padding-left: 3%;">
-            <div class="col text-lg-start text--start text-sm-center">
-                <h1 style="font-family: 'Montserrat', sans-serif;">CLUB AUTO <strong style="color: #CC6119;">LE MEILLEUR DE L'AUTOMOBILE</strong> </h1>
+            <div class="row "  style="background-color: #232628; color:#ECEFF3;  padding-bottom: 3%; padding-top: 3%; padding-left: 3%; position:relative ;">
+                <div class="col text-lg-start text--start text-sm-center">
+                    <h1 style="font-family: 'Montserrat', sans-serif;">CLUB AUTO <strong style="color: #CC6119;">LE MEILLEUR DE L'AUTOMOBILE</strong> </h1>
+                </div>
             </div>
         </div>
-    </div>
 
-    </div>
 
 <!---------------------------------------------FIN DE LA BARRE DE NAVIGATION---------------------------------------------->
 
 
-    
 </section>
 
 
@@ -191,7 +195,7 @@
             </p>
         </div>
 
-       
+    
         <div class="row">
             <div class=" col-sm-12 col-md-10 col-lg-6 mt-5 m-auto" style="margin-top: 60px;">
                 <h1 class="h2" style="font-family: 'Montserrat', sans-serif;" >LE MEILLEUR DE L'AUTOMOBILE</h1>
@@ -202,13 +206,23 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptatibus a nihil repellat tempore tenetur ducimus architecto laudantium consequatur quibusdam quas neque ad deleniti unde molestiae, soluta omnis placeat at?
                 Facilis libero eaque qui tempora molestiae, facere obcaecati fugiat blanditiis odio voluptatum officiis, placeat illum laboriosam eius eligendi corrupti nisi. Aperiam dolores mollitia harum vero provident, quos exercitationem quaerat blanditiis!
             </p> 
-            <div style="margin-top: 5%;font-family: 'Open Sans', sans-serif;" >
-                <ul>
-                    <li style="margin: 2%;"> <strong>Lorem ipsum dolor sit amet.</strong> </li>
-                    <li style="margin: 2%;"> <strong>Lorem ipsum dolor sit amet.</strong> </li>
-                    <li style="margin: 2%;"> <strong>Lorem ipsum dolor sit amet.</strong> </li>
-                    <li style="margin: 2%;"> <strong>Lorem ipsum dolor sit amet.</strong> </li>
-                    <li style="margin: 2%;"> <strong>Lorem ipsum dolor sit amet.</strong> </li>
+            <div style="margin-top: 5%;font-family: 'Open Sans', sans-serif; ">
+                <ul class="p-0">
+                    <li style="margin:0;list-style: none;"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16" style="color: #CC6119;">
+  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+</svg> Lorem ipsum dolor sit amet.</strong> </li>
+                    <li style="margin: 0;list-style: none;"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16" style="color: #CC6119;">
+  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+</svg> Lorem ipsum dolor sit amet.</strong> </li>
+                    <li style="margin: 0;list-style: none;"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16" style="color: #CC6119;">
+  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+</svg> Lorem ipsum dolor sit amet.</strong> </li>
+                    <li style="margin: 0;list-style: none;"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16" style="color: #CC6119;">
+  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+</svg> Lorem ipsum dolor sit amet.</strong> </li>
+                    <li style="margin: 0;list-style: none;"> <strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16" style="color: #CC6119;">
+  <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+</svg> Lorem ipsum dolor sit amet.</strong> </li>
                 </ul>
             </div>
 
@@ -226,9 +240,9 @@
 
 <section>
 
-        <div class="" style=" background-image: url(/images/vente-location.jpg);padding: 10%; margin-top: 60px; background-size: cover;">
+        <div class="" style=" background-image: url(/images/vente-location2.jpg);padding: 10%; margin-top: 60px; background-size: cover;">
 
-            <div class="container-fluid col-12 col-sm-12 col-md-8 col-lg-12 d-lg-flex d-md-block">
+            <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 d-lg-flex d-md-block ">
             
                 <div class="" style="background-color: #FAB637; margin: 30px 10px 60px 10px; padding: 3%;">
                     <h1 class="h2" style="font-family: 'Montserrat', sans-serif;">Vous souhaitez louer ?</h1> 
@@ -248,11 +262,11 @@
         <div class="container-fluid text-center" style="background-color: #232628; padding: 20%; padding: 40px;">
             <div class="container">
                 <h1 style="color: #ECEFF3;padding: 10px; font-family: 'Montserrat', sans-serif;">VEHICULES RECENTS</h1>
-                <hr style="color: #CC6119; padding: 10px;margin: 10px 80px 10px 80px;">
             </div>
 
             <section class="row gy-3 gx-3 justify-content-center align-items-center text-start container-fluid  " style="font-family: 'Montserrat', sans-serif;">
-                <div class="col-md-6 col-lg-4  justify-content-center">
+                <hr style="color: #CC6119; border: solid;" class=" m-3">
+                <div class="col-md-6 col-lg-4  justify-content-center d-sm-flex">
                     <div class="card" style="background-color:#3a3c3d; color: #ECEFF3;">
                         <img src="images/vehicule2.jpg" alt="voiture2" class="card-img-top">
 
@@ -319,12 +333,12 @@
     <div class="container-fluid ">
         <h1 style="margin-top: 60px; text-align: center; font-family: 'Montserrat', sans-serif;">Pourquoi nous choisir ?</h1>
 
-        <div class="container-fluid text-start align-items-center justify-content-center">
-            <div class="row col-12" style="padding: 40px;margin-top: 60px;">
+        <div class="container text-start align-items-center ">
+            <div class="row col-12 m-auto" style="padding: 40px;margin-top: 60px;">
 
                 
                 <div class="col-md-1 col-lg-1"><img src="/images/icon1.png" alt="étiquette" style="width: 50px;" class="float-lg-end"></div>
-                <div class="col-md-12 col-lg-2">
+                <div class="col-md-5 col-lg-2" >
                     <strong style="font-family: 'Montserrat', sans-serif;">FINANCEMENT</strong> 
                 <p style="font-family: 'Open Sans', sans-serif;" class="col-md-12 col-lg-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum maxime accusantium ipsa quo nemo in nihil, eum aperiam rerum.
                 </p>
@@ -332,7 +346,7 @@
 
             
                 <div class="col-md-1 col-lg-1"><img src="/images/icon2.png" alt="joge" style="width: 50px;" class="float-lg-end"></div>
-                <div class="col-md-12 col-lg-2">
+                <div class="col-md-5 col-lg-2">
                     <strong style="font-family: 'Montserrat', sans-serif;">REACTIVITE DE L'EQUIPE TECHNIQUE</strong>
                     <p style="font-family: 'Open Sans', sans-serif;" class="col-md-12 col-lg-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum maxime accusantium ipsa quo nemo in nihil, eum aperiam rerum.
                     </p>
@@ -340,7 +354,7 @@
 
                 
                 <div class="col-md-1 col-lg-1 "><img src="/images/icon3.png" alt="bulle message" style="width: 50px;" class="float-lg-end"></div>
-                <div class="col-md-12 col-lg-2">
+                <div class="col-md-5 col-lg-2" >
                     <strong style="font-family: 'Montserrat', sans-serif;">A L'ECOUTE DE NOTRE CLIENTELE</strong>
                     <p style="font-family: 'Open Sans', sans-serif;" class="col-md-12 col-lg-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum maxime accusantium ipsa quo nemo in nihil, eum aperiam rerum.
                     </p>
@@ -348,7 +362,7 @@
                 
                 
                 <div class="col-md-1 col-lg-1"><img src="/images/icon4.png" alt="ckeck list" style="width: 50px;" class="float-lg-end"></div>
-                <div class="col-md-12 col-lg-2">
+                <div class="col-md-5 col-lg-2">
                     <div>
                         <strong style="font-family: 'Montserrat', sans-serif;">SERVICE & MAINTENANCE</strong>
                     <p style="font-family: 'Open Sans', sans-serif;" class="col-md-12 col-lg-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum maxime accusantium ipsa quo nemo in nihil, eum aperiam rerum.
@@ -374,9 +388,9 @@
 
 <footer class="container-fluid">
     
-    <div style="background-image:url(/images/vehicule3.jpg); background-size: cover; padding-top: 100px;" class="container-fluid">
+    <div style="background-image:url(/images/vehicule3.3.png); background-size: cover; padding-top: 100px;" class="container-fluid">
                 
-            <div class="container-fluid row col-sm-12 col-md-10 col-lg-6 d-md-flex p-4 m-sm-0 m-md-auto m-lg-5">
+            <div class="container-fluid row col-sm-12 col-md-10 col-lg-6 d-md-flex p-4   mb-0">
                 <div class=" container-fluid mt-5 ">
                     <div class="p-5" style="background-color: #fab637e1; ">
                         <h1 style="font-family: 'Montserrat', sans-serif;">CLUB AUTO <br> <span style="color:#ECEFF3"> VENTE ET LOCATION</span></h1> 
@@ -385,64 +399,68 @@
                     </div>
                 </div>
             </div>
-            
-                <div class="container-fluid   " style="background-color: #232628;">
+    </div> 
+        
+                <div class="container-fluid " style="background-color: #232628; ">
 
-                    <div class="" style="color: #ECEFF3; ">
-                        <div class="" >
-                            <h1 class="h6"><span style="color:#6C98E1 ;" style="font-family: 'Montserrat', sans-serif;">CLUB </span>
-                                AUTO </h1>
-                            <p style="font-family: 'Open Sans', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia earum necessitatibus quae repellat, adipisci culpa illum.
-                            </p>
-                        </div>
+                    <div class="container-fluid" style="color: #ECEFF3; ">
+                        <div class="row col-lg-12 col-md-12 p-5  m-auto ">
+                            <div class="col" >
+                                <h1 class="h6"><span style="color:#6C98E1 ;" style="font-family: 'Montserrat', sans-serif;">CLUB </span>
+                                    AUTO </h1>
+                                <p style="font-family: 'Open Sans', sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia earum necessitatibus quae repellat, adipisci culpa illum.
+                                </p>
+                            </div>
 
-                        <div class="">
-                            <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">HORAIRE D'OUVERTURE </h1>
-                            <P style="font-family: 'Open Sans', sans-serif;">
-                                lundi-Samedi : 09:00-17:00 
-                                <br>
-                                Dimanche et jours fériés : Fermé
-                            </P>
-                        </div>
+                            <div class="col">
+                                <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">HORAIRE D'OUVERTURE </h1>
+                                <P style="font-family: 'Open Sans', sans-serif;">
+                                    lundi-Samedi : 09:00-17:00 
+                                    <br>
+                                    Dimanche et jours fériés : Fermé
+                                </P>
+                            </div>
 
-                        <div class="">
-                            <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">NEWSLETTER</h1>
-                            <div class="col-lg">
-                                <div class="mb-3 form-floating">                
-                                    <input type="text" name="email" id="email" class="form-control-sm " placeholder="Entrez votre email">
-                                    <label for="email"></label>
-                                    <div>
-                                        <small class="form-text" style="color:#5e6163; font-family: 'Open Sans', sans-serif;">Inscrivez-vous pour recevoir les dernières offres</small>
+                            <div class="col">
+                                <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">NEWSLETTER</h1>
+                                <div class="col-lg ">
+                                    <div class="mb-3 form-floating input-group w-50">                
+                                        <input type="text" name="email" id="email" class="form-control-sm " placeholder="Entrez votre email">
+                                        <label for="email"></label>
+                                        <!-- je me suis arrêté là-->
+                                        <div>
+                                            <small class="form-text" style="color:#5e6163; font-family: 'Open Sans', sans-serif;">Inscrivez-vous pour recevoir les dernières offres</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="">
-                            <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">RESEAUX SOCIAUX </h1>
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" >
-                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="margin:10px;">
-                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            <div class="col">
+                                <h1 class="h6" style="font-family: 'Montserrat', sans-serif;">RESEAUX SOCIAUX </h1>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook " viewBox="0 0 16 16" >
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                                         </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="margin:10px;">
-                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16" style="margin:10px;">
-                                        <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" style="margin:10px;">
-                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
-                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16" style="margin:10px;">
+                                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="margin:10px;">
+                                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16" style="margin:10px;">
+                                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16" style="margin:10px;">
+                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                            </svg>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <hr style="color: #bcc2c2; margin-left:20px; margin-right: 20px;">
                     <p style="color:  #bcc2c2; text-align: center; padding-bottom: 20px ; font-family: 'Open Sans', sans-serif;">Copyright &copy Club Auto - Tous droits réservés</p>
                 </div>
-    </div>
+  
     
 </footer>
 

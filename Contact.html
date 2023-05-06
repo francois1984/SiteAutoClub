@@ -120,7 +120,7 @@
 </style>
 
 <section >
-        <div class="navbar navbar-expand-lg navbar-light p-0 dnone d-xl-flex" style="background: #eceff3da;" >
+        <div class="navbar navbar-expand-lg navbar-light p-0 dnone d-xl-flex position-relative" style="background: #eceff3da;" >
             
             <div class="collapse navbar-collapse justify-content-end" style="margin-right: 8rem;" id="navbar-content">
                 
@@ -139,20 +139,52 @@
 
 
 <!---------------------------------------------FIN DE LA BARRE DE NAVIGATION---------------------------------------------->
-
-<div style="background-image: url(/images/vehicule3.3.3.jpg); padding-top: 420px; background-size: cover;position:relative; z-index:-1;"></div>
-<div class="container" >
+<div class="z-1 position-absolute ">
+    <div class="container" style="background-color: #FFFFFF; transform: translate(30%,85%);border-style: solid; width: 800px; height: 300px;">
+        <h1>CONTACTEZ NOUS</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class=" p-3 ">
+                        <label for="Prenom">Prénom*</label>
+                        <input type="text" class="form-control" placeholder="Entrez votre prénom" aria-label="First name">
+                    </div>
+                    <div class=" p-3">
+                        <label for="Nom">Nom*</label>
+                        <input type="text" class="form-control" placeholder="Entrez votre nom" aria-label="Last name">
+                    </div>
+                </div>
     
+                <div class="col">
+                    <div class=" p-3 ">
+                        <label for="Email">Email*</label>
+                        <input type="text" class="form-control" placeholder="Entrez une adresse mail valide" aria-label="First name">
+                    </div>
+                    <div class=" p-3">
+                        <label for="Telephone">Téléphone*</label>
+                        <input type="text" class="form-control" placeholder="Phone number" aria-label="Last name">
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary ">Primary</button>
+    </div>
 </div>
-<div class="row" style="background-color: #FFFFFF; padding: 200px;border-style: solid;position: absolute;z-index:0">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-    </div>
-  </div>
-<div style="background-color: #ECEFF3; padding-top: 420px;position:relative; z-index:-1;"></div>
+
+<div class="z-0 position-relative" style="background-image: url(/images/vehicule3.3.3.jpg);background-size: cover;padding-top: 30%;"></div>
+
+<div class="z-0 position-relative " style="background-color: #ECEFF3; padding-top: 30%;"></div>
+
+
+
+
+
+
 
 <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx DEBUT DU FOOTER XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
 
